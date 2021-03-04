@@ -7,5 +7,5 @@ SELECT properties.id as id,
   WHERE city LIKE '%ancouver'
   GROUP BY properties.id
   HAVING avg(property_reviews.rating) >= 4
-  ORDER BY cost_per_night DESC
+  ORDER BY cost_per_night ASC
   LIMIT 10;
